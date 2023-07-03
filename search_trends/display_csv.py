@@ -8,7 +8,7 @@ def load_csv(filename = './data/geoMap.csv'):
 
 csv = load_csv()
 
-def show_csv(csv = csv):
+def plot_trend_data(csv = csv):
     states = csv.State
     values = csv.Search
 
