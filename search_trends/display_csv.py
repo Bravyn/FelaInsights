@@ -8,7 +8,7 @@ def load_csv(filename = './data/geoMap.csv'):
 csv = load_csv()
 
 def show_csv(csv = csv):
-    
     st.write(csv)
+    st.line_chart(csv.Search.head(5))
 
 
