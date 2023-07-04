@@ -8,7 +8,7 @@ with t1:
     st.subheader("Fella Trends")
     plot_trend_data()
 with t2:
-    st.info("Pleasue use short lyric texts.")
+    st.info("Please avoid very long lyric texts.")
     lyrics = lyrics()
     st.subheader("Lyric Sentiments")
     try:
