@@ -8,8 +8,11 @@ with t1:
     st.subheader("Fella Trends")
     plot_trend_data()
 with t2:
+    st.info("Pleasue use short lyric texts.")
     lyrics = lyrics()
     st.subheader("Lyric Sentiments")
-    st.write(lyrical_sentiment(lyrics)[0]['label'])
-
+    try:
+        st.write(lyrical_sentiment(lyrics)[0]['label'])
+    except Exception as e:
+        st.warning("Text too large")
 
